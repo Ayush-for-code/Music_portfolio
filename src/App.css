@@ -376,8 +376,10 @@ body{
 }
 
 .nav-container ul{
-  display: block;
-    margin-right:135px;
+  position: absolute;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
 }
 
 .nav-container li{
@@ -394,7 +396,7 @@ body{
     left:50%;
     transform:translateX(-50%);
     margin:0;
-    font-size:58px;
+    font-size:68px;
     z-index:10;
 }
 
