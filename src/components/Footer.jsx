@@ -10,7 +10,6 @@ const Footer = () => {
     </div>
     <div className="section-2">
         <h3>Contact</h3>
-        <p>+ 91 xxxxxxxxx</p>
         <p>contact@onechitra.com</p>
     </div>
 
@@ -54,7 +53,7 @@ const Footer = () => {
 		C-161.8,439.6-151.9,430.2-151.8,418.4z"/>
 </g>
 </svg></a>
-<a href="https://www.reddit.com/r/onechitra/" className="links" target="_blank">
+<a href="https://open.spotify.com/artist/3Lfhqb3MQcrlpnemg1NyHs" className="links" target="_blank">
     <svg fill="#ffffff" height="50x" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 186.845 186.845" xml:space="preserve">
 <g>
@@ -75,7 +74,7 @@ const Footer = () => {
 </a>
     </div>
     <span className="copyright">
-        &copy; onchitra 2026
+        &copy; onechitra 2026
     </span>
  
    </footer>

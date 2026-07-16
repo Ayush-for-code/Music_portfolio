@@ -23,12 +23,12 @@ const Navbar = () => {
       <h2>Music Artist</h2>
       <p>Creating and sharing music independently, driven by passion, creativity, and a vision without boundaries.</p>
         <ul>
-    <li><a href="">follow</a></li>
+    <li><a href="https://music.youtube.com/watch?v=GnEhZ9tM7Tw&list=OLAK5uy_m31PSzgDkfqS4zZS74dOAhjBD_-pHtUSM" target="_blank">follow </a></li>
    </ul>
     </div>
     <div className="social-links">
-      <a href="" className="links">
-        <a href=""> <svg fill="#ffffff" height="50px" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+      <a href="https://open.spotify.com/artist/3Lfhqb3MQcrlpnemg1NyHs" className="links">
+        <a href="https://open.spotify.com/artist/3Lfhqb3MQcrlpnemg1NyHs"> <svg fill="#ffffff" height="50px" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 186.845 186.845" xml:space="preserve">
 <g>
 	<path d="M128.875,120.962c-31.094-14.37-74.616-8.014-76.453-7.737c-4.096,0.619-6.915,4.44-6.296,8.536
