@@ -9,7 +9,7 @@ const Recent = () => {
   useEffect(() => {
     const fetchMusic = async () => {
       try {
-        const res = await fetch("http://localhost:3000/music");
+        const res = await fetch("https://music-portfolio-ujbu.onrender.com");
         const data = await res.json();
 
         setMusic(data.items);
