@@ -181,6 +181,7 @@ ul li a {
 .music-container iframe{
   border-radius: 18px;
   outline: none;
+  margin-top: 10px;
   border:none;
 }
 .music-cards {
@@ -538,6 +539,9 @@ body{
     width:100%;
     min-width:100%;
     padding:15px;
+    animation: fade-out-slide-up 1s ease-out;
+ animation-timeline: view();
+  animation-range: entry 10% cover 35%;
 }
 .music-cards .play{
   margin-left:0;
@@ -584,6 +588,7 @@ body{
     margin:20px;
     padding:0;
 }
+
 
 .about .card-container:nth-child(3){
     justify-content:center;
