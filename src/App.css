@@ -172,14 +172,22 @@ ul li a {
   font-size: 43px;
 }
 .music-container {
-  margin: 10px 0 0 0;
+  margin: 30px 0 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+.music-container iframe{
+  border-radius: 18px;
+  outline: none;
+  border:none;
+}
 .music-cards {
   min-width: 60%;
+  display: flex;
+  max-width: 60%;
+  align-items: center;
   margin: 7px;
   padding: 18px 34px;
   background: #212226;
@@ -188,8 +196,29 @@ ul li a {
  animation-timeline: view();
   animation-range: entry 20% cover 30%;
 }
+.music-cards div{
+  margin:20px;
+}
+.music-cards img{
+  border-radius:12px;
+  min-width: 200px;
+  max-width: 200px;
+}
+.music-cards .play{
+  cursor: pointer;
+   border-radius:12px;
+  margin-left :auto;
+  background-color: #30e320;
+  padding:8px 18px;
+  transition: all 0.1s linear;
+}
+.music-cards .play:hover{
+ scale: 1.1;
+ background-color: #6bf65f;
+}
 .music-cards p {
   color: #abadb1;
+  
   font-weight: 2;
 }
 /* about sectioin */
@@ -501,12 +530,19 @@ body{
     margin-top:25px;
 }
 
+.music-cards img{
+  min-width:80%;
+}
 .music-cards{
+  flex-direction: column;
     width:100%;
     min-width:100%;
     padding:15px;
 }
-
+.music-cards .play{
+  margin-left:0;
+  
+}
 .music-cards h3{
     font-size:18px;
 }
