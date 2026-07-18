@@ -3,14 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-     "dev": "vite",
-    "server": "node backend/server.js",
-    "dev-all": "concurrently \"npm run server\" \"npm run dev\"",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+ "scripts": {
+  "dev": "vite",
+  "server": "node backend/server.js",
+  "start": "node backend/server.js",
+  "dev-all": "concurrently \"npm run server\" \"npm run dev\"",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview"
+},
   "dependencies": {
     "concurrently": "^10.0.3",
     "cors": "^2.8.6",
