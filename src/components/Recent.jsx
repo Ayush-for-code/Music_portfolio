@@ -1,29 +1,31 @@
 import React, { useState, useEffect } from "react";
+import Songimg from "../assets/BACK OFF.jpg"
+import Songimg2 from "../assets/slot.jpg"
 
 const Recent = () => {
-  const [music, setMusic] = useState([]);
-  const [selectedVideo, setSelectedVideo] = useState(null);
+  // const [music, setMusic] = useState([]);
+  // const [selectedVideo, setSelectedVideo] = useState(null);
   const [showAll,setshowAll] = useState(false)
-  const displayedSongs = showAll ? music : music.slice(0, 2);
+  // const displayedSongs = showAll ? music : music.slice(0, 2);
 
-  useEffect(() => {
-    const fetchMusic = async () => {
-      try {
-        const res = await fetch("https://music-portfolio-ujbu.onrender.com/music");
-        const data = await res.json();
+  // useEffect(() => {
+  //   const fetchMusic = async () => {
+  //     try {
+  //       const res = await fetch("https://music-portfolio-ujbu.onrender.com/music");
+  //       const data = await res.json();
 
-        setMusic(data.items);
+  //       setMusic(data.items);
 
-        if (data.items.length > 0) {
-          setSelectedVideo(data.items[0]);
-        }
-      } catch (err) {
-        console.error(err);
-      }
-    };
+  //       if (data.items.length > 0) {
+  //         setSelectedVideo(data.items[0]);
+  //       }
+  //     } catch (err) {
+  //       console.error(err);
+  //     }
+  //   };
 
-    fetchMusic();
-  }, []);
+  //   fetchMusic();
+  // }, []);
 
   return (
     <div className="recent">
@@ -32,42 +34,37 @@ const Recent = () => {
         <span  onClick={() => setshowAll(!showAll)}>{showAll ?"Show Less":"View All"}</span>
       </div>
 
-      {selectedVideo && (
-       <div className="music-container">
-         <iframe
-          width="80%"
-          height="400"
-          src={`https://www.youtube.com/embed/${selectedVideo.id.videoId}?autoplay=1`}
-          title={selectedVideo.snippet.title}
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-        />
-       </div>
-      )}
+      
 
       <div className="music-container">
-        {displayedSongs.map((song) => (
-          <div
-            key={song.id.videoId}
-            className="music-cards"
-            onClick={() => setSelectedVideo(song)}
-          >
-            <img
-              src={song.snippet.thumbnails.medium.url}
-              alt={song.snippet.title}
-            />
-
-            <div>
-              <h3>{song.snippet.title}</h3>
-              <p>{song.snippet.channelTitle}</p>
-            </div>
-            <div className="play" onClick={() => setSelectedVideo(song)}>
-              {selectedVideo?.id.videoId === song.id.videoId
-    ? "Playing"
-    : "Play"}
-            </div>
+        <a href="https://open.spotify.com/track/265g7JoiMueXUS9uVVx5fG?si=97caf29fe7844fff" className="music-cards" target="_blank">
+            <img src={Songimg} alt="cover" />
+          <div>
+            <h3>BACK OFF</h3>
+            <p>ONECHITRA</p>
           </div>
-        ))}
+          
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+        </a>
+        <a href="" className="music-cards" target="_blank">
+            <img src={Songimg2} alt="cover" />
+          <div>
+            <h3>COMING SOON</h3>
+            <p>ONECHITRA</p>
+          </div>
+          
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+        </a>
+        <a href="" className="music-cards" target="_blank">
+            <img src={Songimg2} alt="cover" />
+          <div>
+            <h3>COMING SOON</h3>
+            <p>ONECHITRA</p>
+          </div>
+          
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+        </a>
+
       </div>
     </div>
   );
